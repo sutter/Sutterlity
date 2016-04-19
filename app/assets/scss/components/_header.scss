@@ -1,0 +1,29 @@
+/** ======================================
+ * Component : Header
+ * ======================================= */
+
+[id="header"] {
+  padding: em(20) 0;
+  background: $clr-0-darken;
+}
+
+[id="header"] .wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  display: block;
+  margin: 0;
+  font-size: em(20);
+}
+
+.header-logo-link {
+  text-transform: uppercase;
+  color: $clr-light;
+  transition: $trans;
+  &:hover {
+    color: $clr-light;
+    opacity: 0.75;
+  }
+}
