@@ -1,0 +1,35 @@
+/** ======================================
+ * Component : Quote
+ * ======================================= */
+ 
+.quote {
+  overflow: hidden;
+  position: relative;
+  padding: em(126) 0 em(80);
+  text-align: center;
+  background: $clr-0-darken;
+  &::after {
+    content: '"';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    color: $clr-0-dark;
+    font-size: em(600);
+    font-family: $custom-font-family;
+    transform: translateX(-50%) translateY(450%);
+  }
+  .wrapper {
+    max-width: em(660);
+  }
+  blockquote {
+    position: relative;
+    z-index: 2;
+    padding: em(20, 24) 0;
+    font-family: $header-font-family;
+    font-size: em(24);
+    line-height: em(32, 24);
+    color: $clr-light;
+    //background: $clr-0-darken;
+  }
+}

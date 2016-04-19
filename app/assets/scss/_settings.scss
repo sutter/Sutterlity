@@ -13,15 +13,15 @@ $clr-notice    : #D9EDF7;
 
 $clr-danger    : #D24A53;
 
-$clr-divider   : #ededed;
+$clr-divider   : #f5f5f5;
 
-$clr-0-darken  : #030303;
-$clr-0-dark    : #161616;
-$clr-0         : #797f7e;
+$clr-0-darken  : #161818;
+$clr-0-dark    : tint($clr-0-darken, 7%);
+$clr-0         : #999;
 $clr-0-light   : #adb4c0;
 $clr-0-lighten : #fafafa;
 
-$clr-1         : #76cdb4;
+$clr-1         : #fad8d5; //#e9c8ab; //#F36653;
 $clr-1-light   : tint($clr-1, 50%);
 $clr-1-lighten : tint($clr-1, 85%);
 $clr-1-dark    : shade($clr-1, 15%);

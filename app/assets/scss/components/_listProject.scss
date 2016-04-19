@@ -1,0 +1,83 @@
+/** ======================================
+ * Component : List Project
+ * ======================================= */
+ 
+ .listProject {
+   display: flex;
+   flex-wrap: wrap;
+ }
+
+.listProject-item {
+  position: relative;
+  display: block;
+  width: 50%;
+  padding: em(20);
+  border-bottom: 1px solid $clr-divider;
+  border-right: 1px solid $clr-divider;
+  color: $clr-0;
+  background: $clr-light;
+  transition: $trans;
+  &:first-child,
+  &:nth-child(2) {
+    border-top: 1px solid $clr-divider;
+  }
+  &:nth-child(2n + 1) {
+    border-left: 1px solid $clr-divider;
+  }
+}
+
+a.listProject-item {
+  &:hover {
+    z-index: 10;
+    border-color: transparent !important;
+    box-shadow: inset 0 0 0 1px $clr-1;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.26), 0px 7px 28px 0px rgba(0, 0, 0, 0.25);
+    transform: scaleX(1.01);
+    transition: $trans;
+  }
+}
+
+.listProject-head {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: em(10);
+}
+
+.listProject-title {
+  display: flex;
+  align-items: center;
+  font-family: $header-font-family;
+  color: $clr-0-darken;
+  .anchor {
+    width: em(15);
+    height: em(8);
+    margin-right: em(10);
+  }
+  .lock {
+    width: em(10);
+    height: em(13);
+    margin-right: em(15);
+  }
+  .strom {
+    width: em(10);
+    height: em(16);
+    margin-right: em(15);
+  }
+}
+
+.listProject-legend {
+  font-size: em(12);
+  color: $clr-0-light;
+  margin-left: em(15,14);
+  &:before {
+    content: '•';
+    display: inline-block;
+    margin-right: em(5, 12);
+  }
+}
+
+.listProject-txt {
+  font-size: em(14);
+  line-height: 1.25;
+  font-style: italic;
+}

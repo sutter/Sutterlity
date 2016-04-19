@@ -1,0 +1,15 @@
+/** ======================================
+ * Component : Contact
+ * ======================================= */
+ 
+ [id=contact] {
+   padding: em(80) 0;
+   color: $clr-1-darken;
+   background: $clr-1 url(../img/pattern-dark.jpg) center no-repeat;
+   background-size: cover;
+
+   .pod-mediumTitle::after {
+     margin-bottom: em(30, 34);
+   }
+
+ }

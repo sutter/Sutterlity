@@ -1,0 +1,23 @@
+/** ======================================
+ * Component : Tag
+ * ======================================= */
+
+.tag {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin: em(-5);
+  list-style: none;
+}
+
+.tag-item {
+  display: block;
+  margin: em(5, 14);
+  padding: em(5,14) em(15,14);
+  font-size: em(14);
+  line-height: 1;
+  font-style: italic;
+  background: shade($clr-0-lighten, 2%);
+  color: tint($clr-0, 25%);
+  border-radius: em(666);
+}

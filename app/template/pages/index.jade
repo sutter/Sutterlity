@@ -4,4 +4,177 @@ append config
   - var template = 't-home'
 
 block content
-  h1  Hello World
+  section
+    header.hero
+      .wrapper
+        p.hero-name <span>Laurent</span> Sutterlity
+        h1.hero-title  UI designer / Développeur front-end
+        p.hero-baseline Je suis spécialisé dans le design d'interface utilisateur <br/> et le dévelloppement front-end pour startup & web agency.
+        .hero-button
+          a.button(href="#references") Mes références
+          a.button.button--secondary(href="#contact") Contact
+      include ../../assets/img/ui.svg
+      .hero-face
+
+    #services.pod
+      .wrapper
+        .pod-header
+          h2.pod-title Creative developper
+          p.pod-bigTitle Design & code
+          p.txtLead Bonjour, je suis Laurent Sutterlity, freelance sur Paris. Créatif et passionné, je suis disponible pour vous accompagner lors de la réalisation de votre projet web, depuis le conseil, jusqu’à la livraison.
+        .grid
+          .grid-2-4
+            h3.pod-smallTitle UI Designer
+            p J'interviens sur la hierarchisation de l'information et la création de prototypes de pages. Je rends votre projet créatif, intuitif, en assure une lecture agréable et facilite la navigation de l'utilsateur.
+            ul.tag
+              li.tag-item UI DEsign
+              li.tag-item UX Design
+              li.tag-item Wireframe
+              li.tag-item Ergonomie
+              li.tag-item Sketch
+              li.tag-item Photoshop
+              li.tag-item Illustrator
+              li.tag-item Invision
+              li.tag-item Principle
+          .grid-2-4
+            h3.pod-smallTitle Développeur front-end
+            p Je code dans les règles de l’art en HTML (HTML5, Jade), CSS (CSS3, Sass) et JavaScript, conforme aux recommandations W3C. Je suis également adepte du Mobile-First et pense performance web.
+            ul.tag
+              li.tag-item HTML
+              li.tag-item CSS
+              li.tag-item JavaScript
+              li.tag-item Php
+              li.tag-item Responsive
+              li.tag-item Mobile first
+              li.tag-item WordPress
+              li.tag-item SCSS
+              li.tag-item Jade
+              li.tag-item Gulp
+              li.tag-item Git
+      .data
+        .data-item
+          .data-title 57
+          .data-legend Missions freelance
+        .data-item
+          .data-title 07
+          .data-legend Années d'expérience
+
+    .quote
+      .wrapper
+        blockquote
+          p Apprendre continuellement et produire la meilleure expérience utilisateur possible est ce qui me stimule dans mon travail.
+
+  section#references.pod
+    .wrapper
+      .pod-header
+        h2.pod-title Portfolio
+        .pod-mediumTitle Mes références
+        p.txtLead J’ai eu la chance et l’opportunité de travailler pour de grandes agences sur des budgets de clients prestigieux tels que Ferrari, SFR, Dassault, BNP, Le Grand Palais, BPI et Carrefour.
+        p Voici un échantillon de projets sur lesquels j’ai eu la chance d’intervenir.
+        ul.listInline.u-txtCenter
+          li
+            a.button.button--labeled(href='#{urlDribbble}', target="_blank")
+              svg.icon
+                use(xlink:href='#dribbble')
+              | Dribbble
+          li
+            a.button.button--labeled(href='#{urlGithub}', target="_blank")
+              svg.icon
+                use(xlink:href='#github')
+              | Github
+      .listProject
+        +projectLock(
+          'Ogustine',
+          '2015',
+          "Intégration web dans un environement Rails en collaboration avec l'équipe E-lam."
+        )
+        +project(
+          'Chausson Finances',
+          'http://www.chaussonfinance.com/',
+          '2016',
+          "UI/UX design et intégration web du site corporate."
+        )
+        +projectLock(
+          'Home By Me',
+          '2015',
+          "Réalisation de la charte graphique, UI/UX design et intégration de l'application web, pour 3DVIA (Dassault" +
+          " System)"
+        )
+        +project(
+          'Delight Data',
+          'http://delight-data.com/fr/',
+          '2015',
+          "UI design et dévelopement de thème WordPress. Intégration web dans un environement Rails en collaboration " +
+          "avec l'équipe E-lam."
+        )
+        +project(
+          'SNCF',
+          '#',
+          '2015',
+          "UI design, convertion d'une DA d'Illustrator vers Sketch APP pour l'agence WeDoData."
+        )
+        +project(
+          'Monitoraide',
+          '#',
+          '2015',
+          "UI design et intégration web dans un environement Rails en collaboration avec l'équipe E-lam."
+        )
+        +project(
+          'StartupAssembly',
+          '#',
+          '2015',
+          "Refonte de l'UI design et intégration web dans un environement Rails en collaboration avec l'équipe E-lam."
+        )
+        +project(
+          'Pyramidale Communication',
+          '#',
+          '2015',
+          "UI design de diverses d'applications mobile dans l'univers du médical."
+        )
+        +project(
+          'FNAC',
+          '#',
+          '2015',
+          "Intégration web sur le wizzard d'achat et création de newsletter."
+        )
+        +project(
+          'Greaaat',
+          '#',
+          '2015',
+          "UI design et dévelopement de thème WordPress."
+        )
+        +projectLock(
+          'Arval BNP',
+          '2015',
+          "Intégration web dans un environement Backbones pour l’agence Awak’It du site anniversaire B2B."
+        )
+        +project(
+        'Ferrari GT',
+        'http://auto.ferrari.com/',
+        '2014',
+        "Intégration web et thème wordpress (travail en équipe) pour l’agence Big Youth."
+        )
+        +project(
+          'BPI France',
+          'http://www.bpifrance.fr/',
+          '2014',
+          "Intégration web (travail en équipe) pour l’agence 5ème Gauche."
+        )
+        +projectLearning(
+          'Formateur indépendant',
+          '2015 - 2013',
+          "Formateur indépendant (HTML, CSS, jQuery, WordPress, UI Design) pour IESA Multimédia, Ziggourat formation," +
+          " Orsys."
+        )
+
+  section#contact.pod
+    .wrapper
+      .pod-header.u-mbn
+        .pod-mediumTitle Travaillons ensemble
+        p.txtLead
+          | Vous avez un projet et vous pensez que nous pouvons travailler ensemble ?<br/> N’hésitez pas à me contacter.
+        p.u-mtm.u-mbm
+          a.button.button--tertiary(href="mailto:laurent@sutterlity.fr") laurent@sutterlity.fr
+        p.txtSmall.u-mbn
+          | Pour toute demande de prestation, merci de m’indiquer votre budget</br> ainsi que votre deadline et
+          | n’oublier pas de me joindre un cahier des charges.

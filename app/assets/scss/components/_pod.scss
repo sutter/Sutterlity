@@ -1,0 +1,65 @@
+/** ======================================
+ * Component : Pod
+ * ======================================= */
+
+.pod-header {
+  text-align: center;
+  padding-left: em(85);
+  padding-right: em(85);
+  margin-bottom: em(80);
+}
+
+.pod-title {
+  font-size: em(10);
+  text-transform: uppercase;
+  color: darken($clr-1, 10%);
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+.pod-bigTitle {
+  font-size: em(41);
+  font-family: $header-font-family;
+  line-height: 1;
+  text-transform: uppercase;
+  color: $clr-0-darken;
+  &::after {
+    content: '';
+    display: block;
+    width: em(66, 41);
+    height: em(4, 41);
+    margin: em(20, 41) auto em(80, 41);
+    background: $clr-0-darken;
+  }
+}
+
+
+.pod-mediumTitle {
+  font-size: em(34);
+  font-family: $header-font-family;
+  line-height: 1;
+  text-transform: uppercase;
+  color: $clr-0-darken;
+  &::after {
+    content: '';
+    display: block;
+    width: em(50, 34);
+    height: em(4, 34);
+    margin: em(20, 34) auto em(80, 34);
+    background: $clr-0-darken;
+  }
+}
+
+.pod-smallTitle {
+  font-size: em(20);
+  text-transform: uppercase;
+  color: $clr-0-darken;
+  &::after {
+    content: '';
+    display: block;
+    width: em(24, 20);
+    height: em(2, 20);
+    margin: em(10, 20) 0;
+    background: $clr-1;
+  }
+}

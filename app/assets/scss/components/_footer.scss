@@ -2,7 +2,28 @@
  * Component : Footer
  * ======================================= */
 
-.footer {
-  padding: $spacer 0;
-  background: $clr-0-lighten;
+[id=footer] {
+  padding: em(60) 0;
+  background: $clr-0-darken;
+
+  p {
+    margin: 0;
+    font-size: em(14);
+  }
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+}
+
+.footer-title {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $clr-0-lighten;
+}
+
+.footer-right {
+  margin-left: auto;
 }

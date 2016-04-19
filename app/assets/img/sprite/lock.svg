@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="12px" height="16px" viewBox="0 0 12 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-539.000000, -2959.000000)" fill="#B6BDC7">
+            <g id="portfolio" transform="translate(20.000000, 2054.000000)">
+                <path d="M523,909 C523,907.895333 523.895556,907 525,907 C526.104667,907 527,907.895556 527,909 L527,911 L523,911 L523,909 Z M529,909 C529,906.791333 527.209111,905 525,905 C522.791333,905 521,906.790889 521,909 L521,911 C519.895333,911 519,911.895333 519,913 L519,919 C519,920.104667 519.895333,921 521,921 L529,921 C530.104667,921 531,920.104667 531,919 L531,913 C531,911.895333 530.104667,911 529,911 L529,909 Z" id="lock"></path>
+            </g>
+        </g>
+    </g>
+</svg>

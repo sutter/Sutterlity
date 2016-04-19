@@ -1,0 +1,72 @@
+/** ======================================
+ * Component : Hero
+ * ======================================= */
+ 
+ .hero {
+   position: relative;
+   padding: em(160) 0;
+   background: $clr-0-darken;
+   overflow: hidden;
+   .wrapper {
+     position: relative;
+     z-index: 3;
+   }
+ }
+
+.hero-name {
+  font-family: $custom-font-family;
+  font-size: em(88);
+  font-weight: 700;
+  line-height: 1;
+  color: $clr-light;
+  span {
+    display: block;
+    font-size: 50%;
+    font-weight: 400;
+    font-style: italic;
+    color: $clr-1;
+  }
+}
+
+.hero-title {
+  color: $clr-1;
+  font-size: em(17);
+  font-weight: 400;
+  text-transform: uppercase;
+  &::after {
+    content: '';
+    display: block;
+    width: em(50, 17);
+    height: em(6, 17);
+    margin: em(20, 17) 0;
+    background: $clr-light;
+  }
+}
+
+.hero-baseline {
+  color: $clr-light;
+}
+
+.hero-button {
+  margin: 0;
+}
+
+.hero-bigLetters {
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-97%) translateY(-50%);
+  opacity: 0.75;
+}
+
+.hero-face {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  bottom: 0%;
+  left: 0;
+  right: 0;
+  background: url('../img/sutterlity@2x.jpg') center no-repeat;
+  background-size: auto 100%;
+}

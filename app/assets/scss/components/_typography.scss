@@ -28,12 +28,18 @@
 }
 
 .txtLead {
-  font-weight: bold;
-  font-size: em(20);
+  font-weight: 700;
+  font-size: em(18);
+  line-height: em(26, 18);
   color: $clr-0-dark;
 }
 
+.txtMedium {
+  font-weight: 700;
+  color: $clr-0-darken;
+}
+
 .txtSmall {
-  font-size: rem(12);
-  line-height: 1.25em;
+  font-size: em(14);
+  line-height: em(18, 14);
 }

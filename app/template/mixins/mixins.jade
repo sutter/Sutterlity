@@ -1,0 +1,37 @@
+mixin project(title, url, time, decription)
+    a.listProject-item(href=url, target="_blank")
+        .listProject-head
+            .listProject-title
+                svg.anchor
+                    use(xlink:href='#anchor')
+                =title
+            .listProject-legend <time>#{time}</time>
+        .listProject-txt=decription
+
+mixin projectLock(title, time, decription)
+    .listProject-item
+        .listProject-head
+            .listProject-title
+                svg.lock
+                    use(xlink:href='#lock')
+                =title
+            .listProject-legend <time>#{time}</time>
+        .listProject-txt=decription
+
+mixin projectLearning(title, time, decription)
+    .listProject-item
+        .listProject-head
+            .listProject-title
+                svg.strom
+                    use(xlink:href='#strom')
+                =title
+            .listProject-legend <time>#{time}</time>
+        .listProject-txt=decription
+
+
+mixin socialItem (name, svg, url)
+    li.social-item
+        a.social-link(href="#{url}", target="_blank")
+            svg.social-icon
+                use(xlink:href='##{svg}')
+            .social-name=name

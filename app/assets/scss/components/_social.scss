@@ -1,0 +1,37 @@
+/** ======================================
+ * Component : Social
+ * ======================================= */
+
+ .social {
+   display: flex;
+   padding: 0;
+   margin: 0;
+   list-style: none;
+ }
+
+.social-item + .social-item {
+  margin-left: em(10);
+}
+
+.social-link {
+  display: block;
+  padding: em(10);
+  line-height: 1;
+  transition: $trans;
+  &:hover {
+    .social-icon {
+      fill: $clr-light;
+    }
+  }
+}
+
+.social-icon {
+  width: em(30);
+  height: em(30);
+  fill: $clr-1;
+  transition: $trans;
+}
+
+.social-name {
+  @include visually-hidden;
+}
