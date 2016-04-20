@@ -2,6 +2,7 @@ var gulp         = require('gulp');
 var config       = require('../config').svgstore;
 var svgstore     = require('gulp-svgstore');
 var svgmin       = require('gulp-svgmin');
+var cheerio      = require('gulp-cheerio');
 var path         = require('path');
 
 gulp.task('svgstore', function () {
@@ -17,6 +18,12 @@ gulp.task('svgstore', function () {
           }
         }]
       }
+    }))
+    .pipe(cheerio({
+      run: function ($) {
+        $('[fill]').removeAttr('fill');
+      },
+      parserOptions: { xmlMode: true }
     }))
     .pipe(svgstore({inlineSvg: true}))
     .pipe(gulp.dest(config.dest));
