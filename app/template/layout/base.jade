@@ -8,12 +8,12 @@ html(lang="#{lang}")
   head
     include ../partials/head
 
-  body(role='document', class="#{template}")
+  body
 
     div(style='height: 0; width: 0; position: absolute; visibility: hidden')
       include ../../assets/img/sprite.svg
 
     #app
-      main#app-main(role='main')
+      main#app-main
         block content
       include ../partials/footer

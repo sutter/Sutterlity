@@ -18,6 +18,6 @@ gulp.task('svgstore', function () {
         }]
       }
     }))
-    .pipe(svgstore())
+    .pipe(svgstore({inlineSvg: true}))
     .pipe(gulp.dest(config.dest));
 });

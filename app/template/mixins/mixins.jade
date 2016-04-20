@@ -5,7 +5,7 @@ mixin project(title, url, time, decription)
                 svg.anchor
                     use(xlink:href='#anchor')
                 =title
-            .listProject-legend <time>#{time}</time>
+            .listProject-legend=time
         .listProject-txt=decription
 
 mixin projectLock(title, time, decription)
@@ -15,7 +15,7 @@ mixin projectLock(title, time, decription)
                 svg.lock
                     use(xlink:href='#lock')
                 =title
-            .listProject-legend <time>#{time}</time>
+            .listProject-legend=time
         .listProject-txt=decription
 
 mixin projectLearning(title, time, decription)
@@ -25,7 +25,7 @@ mixin projectLearning(title, time, decription)
                 svg.strom
                     use(xlink:href='#strom')
                 =title
-            .listProject-legend <time>#{time}</time>
+            .listProject-legend=time
         .listProject-txt=decription
 
 
