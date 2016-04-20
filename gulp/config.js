@@ -64,27 +64,6 @@ module.exports = {
   fonts: {
     src:  app + '/assets/fonts/**',
     dest: build + '/assets/fonts'
-  },
-
-  font_icon: {
-    path_create_icon_font_file: app + '/assets/scss/components/_icons.scss',
-    src:                        app + '/assets/icons',
-    files_src:                  app + '/assets/icons/*.svg',
-    path:                       app + '/assets/scss/tools/_template-font-custom.scss',
-    target_path:                '../scss/components/_icons.scss',
-    font_path:                  '../fonts/',
-    dest:                       app + '/assets/fonts',
-    files_dest:                 app + '/assets/fonts/' + fontName + '.{eot,svg,ttf,woff}',
-    settings: {
-      font_name:               fontName,
-      append_codepoints:       true,
-      normalize:               true,
-      font_height:             512
-    }
-  },
-
-  deploy: {
-    folderSrc:  build + '/**/*'
   }
 
 };

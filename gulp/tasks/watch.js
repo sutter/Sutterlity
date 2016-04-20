@@ -29,12 +29,6 @@ gulp.task('watch', function () {
     reload();
   });
 
-  watch(config.font_icon.files_src, function() {
-    gulp.start('font-icon');
-    gulp.start('styles');
-    reload();
-  });
-
   watch(config.fonts.src, function() {
     gulp.start('fonts');
     reload();
