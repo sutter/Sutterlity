@@ -13,8 +13,12 @@
   }
 
   .wrapper {
-    display: flex;
-    align-items: center;
+    text-align: center;
+    @media (min-width: $mq-m-up) {
+      text-align: left;
+      display: flex;
+      align-items: center;
+    }
   }
 
 }
@@ -26,5 +30,7 @@
 }
 
 .footer-right {
-  margin-left: auto;
+  @media (min-width: $mq-m-up) {
+    margin-left: auto;
+  }
 }

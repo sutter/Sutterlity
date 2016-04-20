@@ -15,10 +15,13 @@
 
 .hero-name {
   font-family: $custom-font-family;
-  font-size: em(88);
+  font-size: em(60);
   font-weight: 700;
   line-height: 1;
   color: $clr-light;
+  @media (min-width: $mq-s-up) {
+    font-size: em(88);
+  }
   span {
     display: block;
     font-size: 50%;
@@ -30,25 +33,48 @@
 
 .hero-title {
   color: $clr-1;
-  font-size: em(17);
+  font-size: em(14);
   font-weight: 400;
   text-transform: uppercase;
+  @media (min-width: $mq-s-up) {
+    font-size: em(17);
+  }
   &::after {
     content: '';
     display: block;
-    width: em(50, 17);
-    height: em(6, 17);
-    margin: em(20, 17) 0;
+    width: em(40, 14);
+    height: em(3, 14);
+    margin: em(20, 14) 0;
     background: $clr-light;
+    @media (min-width: $mq-s-up) {
+      width: em(50, 17);
+      height: em(6, 17);
+    }
   }
 }
 
 .hero-baseline {
   color: $clr-light;
+  @media (max-width: $mq-s) {
+    br {
+      display: none;
+    }
+  }
 }
 
 .hero-button {
   margin: 0;
+  @media (max-width: $mq-s) {
+    margin-top: em(80);
+    .button {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      + .button {
+        margin-top: em(30);
+      }
+    }
+  }
 }
 
 .hero-face {
@@ -58,6 +84,11 @@
   bottom: 0%;
   left: 0;
   right: 0;
-  background: url('../img/sutterlity@2x.jpg') center no-repeat;
-  background-size: auto 100%;
+  @media (min-width: $mq-s-up) {
+    background: url('../img/sutterlity.jpg') right -140px center no-repeat;
+    background-size: auto 100%;
+  }
+  @media (min-width: $mq-m-up) {
+    background-position: calc(50% + 300px) center;
+  }
 }

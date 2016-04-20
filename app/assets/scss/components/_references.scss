@@ -3,5 +3,10 @@
  * ======================================= */
 
  [id=references] {
-   padding: em(80);
+   padding-top: em(80);
+   padding-bottom: em(80);
+   @media (min-width: $mq-m-up) {
+     padding-right: em(80);
+     padding-left: em(80);
+   }
  }

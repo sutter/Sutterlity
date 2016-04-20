@@ -4,9 +4,11 @@
 
 .pod-header {
   text-align: center;
-  padding-left: em(85);
-  padding-right: em(85);
   margin-bottom: em(80);
+  @media (min-width: $mq-l-up) {
+    padding-left: em(85);
+    padding-right: em(85);
+  }
 }
 
 .pod-title {

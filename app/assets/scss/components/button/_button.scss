@@ -92,13 +92,13 @@
 }
 
 .button--tertiary {
-  color: $clr-light;
-  background: $clr-0-darken;
+  color: $clr-0-darken;
+  background: $clr-light;
   &:hover, &:focus {
-    color: $clr-light;
-    background: $clr-0-darken;
+    color: $clr-0-darken;
+    background: $clr-light;
     &::after {
-      color: $clr-1;
+      color: $clr-0-darken;
     }
   }
 }

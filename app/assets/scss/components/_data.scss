@@ -5,23 +5,34 @@
  .data {
    position: relative;
    z-index: 5;
-   display: flex;
-   padding: em(30);
-   width: em(592);
+   padding: 0 em(30);
    margin: 0 auto;
    text-align: center;
    background: $clr-0-darken;
    transform : translateY(-240px);
    border: 10px solid $clr-light;
-   box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.26), 0px 14px 28px 0px rgba(0,0,0,0.25);
+   @media (min-width: $mq-s-up) {
+     display: flex;
+     padding: em(30);
+   }
+   @media (min-width: $mq-m-up) {
+     width: em(592);
+     box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.26), 0px 14px 28px 0px rgba(0,0,0,0.25);
+   }
  }
 
 .data-item {
-  width: 50%;
+  @media (min-width: $mq-s-up) {
+    width: 50%;
+  }
 }
 
 .data-item + .data-item {
-  border-left: 1px solid $clr-0-dark;
+  border-top: 1px solid $clr-0-dark;
+  @media (min-width: $mq-s-up) {
+    border-top: 0;
+    border-left: 1px solid $clr-0-dark;
+  }
 }
 
 .data-title {

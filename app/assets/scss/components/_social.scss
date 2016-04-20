@@ -2,11 +2,16 @@
  * Component : Social
  * ======================================= */
 
- .social {
+ .social.social {
    display: flex;
+   justify-content: center;
    padding: 0;
-   margin: 0;
+   margin: em(40) 0 0 0;
    list-style: none;
+   @media (min-width: $mq-m-up) {
+     justify-content: flex-start;
+     margin-top: 0;
+  }
  }
 
 .social-item + .social-item {

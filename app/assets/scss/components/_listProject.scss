@@ -3,26 +3,30 @@
  * ======================================= */
  
  .listProject {
-   display: flex;
-   flex-wrap: wrap;
+   @media (min-width: $mq-m-up) {
+     display: flex;
+     flex-wrap: wrap;
+   }
  }
 
 .listProject-item {
   position: relative;
   display: block;
-  width: 50%;
   padding: em(20);
   border-bottom: 1px solid $clr-divider;
-  border-right: 1px solid $clr-divider;
   color: $clr-0;
   background: $clr-light;
   transition: $trans;
-  &:first-child,
-  &:nth-child(2) {
-    border-top: 1px solid $clr-divider;
-  }
-  &:nth-child(2n + 1) {
-    border-left: 1px solid $clr-divider;
+  @media (min-width: $mq-l-up) {
+    width: 50%;
+    border-right: 1px solid $clr-divider;
+    &:first-child,
+    &:nth-child(2) {
+      border-top: 1px solid $clr-divider;
+    }
+    &:nth-child(2n + 1) {
+      border-left: 1px solid $clr-divider;
+    }
   }
 }
 
@@ -34,6 +38,10 @@ a.listProject-item {
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.26), 0px 7px 28px 0px rgba(0, 0, 0, 0.25);
     transform: scaleX(1.01);
     transition: $trans;
+    color: $clr-0;
+    .listProject-title .anchor {
+      fill: $clr-1-dark;
+    }
   }
 }
 
@@ -48,10 +56,13 @@ a.listProject-item {
   align-items: center;
   font-family: $header-font-family;
   color: $clr-0-darken;
+  transition: $trans;
   .anchor {
     width: em(15);
     height: em(8);
     margin-right: em(10);
+    fill: $clr-0-darken;
+    transition: $trans;
   }
   .lock {
     width: em(10);
