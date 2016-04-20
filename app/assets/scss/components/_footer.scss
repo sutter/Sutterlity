@@ -9,6 +9,7 @@
   p {
     margin: 0;
     font-size: em(14);
+    color: darken($clr-0, 20%);
   }
 
   .wrapper {
@@ -18,10 +19,10 @@
 
 }
 
-.footer-title {
+.footer-title.footer-title {
   font-weight: 700;
   text-transform: uppercase;
-  color: $clr-0-lighten;
+  color: $clr-light;
 }
 
 .footer-right {
