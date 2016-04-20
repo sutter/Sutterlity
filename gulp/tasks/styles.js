@@ -9,6 +9,7 @@ var sourcemaps   = require('gulp-sourcemaps');
 var gutil        = require("gulp-util");
 var size         = require('gulp-size');
 var csso         = require("gulp-csso");
+var uncss        = require('gulp-uncss');
 var options      = require('minimist')(process.argv.slice(2));
 
 function createNormalizeScss() {
@@ -29,6 +30,7 @@ gulp.task('styles', function() {
     .pipe(sass({ precision: 10 }))
     .pipe(autoprefixer({ browsers: ['last 2 versions'] }))
     .pipe(!options.production ? sourcemaps.write('.') : gutil.noop())
+    .pipe(options.production ? uncss({html: ['./build/index.html']}) : gutil.noop())
     .pipe(options.production ? csso() : gutil.noop())
     .pipe(size({ title: 'style' }))
     .pipe(gulp.dest(config.dest));

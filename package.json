@@ -39,6 +39,7 @@
     "gulp-svgmin": "^1.2.2",
     "gulp-svgstore": "^6.0.0",
     "gulp-uglify": "^1.5.3",
+    "gulp-uncss": "^1.0.5",
     "gulp-util": "^3.0.7",
     "gulp-watch": "^4.3.5",
     "imagemin-pngquant": "^4.2.2",

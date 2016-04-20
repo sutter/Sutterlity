@@ -57,12 +57,12 @@ gulp clean
 
 * Minify HTML
 * Uglify Script
-* Optimise and minify styles with CSSO
+* Optimise and minify styles with CSSO, UNCSS for remove unused CSS the stylesheet
 
 Run project before.
 
 ```
-gulp production
+gulp --production
 ```
 
 ### Deploy on GithubPages
