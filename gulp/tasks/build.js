@@ -5,7 +5,7 @@ gulp.task('build', function(callback){
   runSequence(
     'clean',
     'svgstore',
-    ['normalize', 'styles', 'templates', 'images', 'rootfiles', 'fonts', 'scripts'],
+    ['normalize', 'styles', 'templates', 'images', 'rootfiles'],
     callback
   )
 });
