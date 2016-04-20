@@ -4,7 +4,10 @@
  * --------------------------------------- */
 
 .button--labeled {
-  padding-left: em(56, 14);
+  padding-left: em(16, 14);
+  &::after {
+    transform: translate3d(em(8,14), 25%, 0);
+  }
   .icon {
     position: absolute;
     top: 50%;
@@ -14,5 +17,11 @@
     transform: translateY(-50%);
     fill: $clr-0-darken;
     transition: $trans;
+  }
+
+  &:hover {
+    &::after {
+      transform: translate3d(em(8,14), 0, 0);
+    }
   }
 }

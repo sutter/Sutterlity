@@ -73,15 +73,9 @@ block content
         p Voici un échantillon de projets sur lesquels j’ai eu la chance d’intervenir.
         ul.listInline.u-txtCenter
           li
-            a.button.button--labeled(href='#{urlDribbble}', target="_blank")
-              svg.icon
-                use(xlink:href='#dribbble')
-              | Dribbble
+            +ctaLabeled (urlDribbble, 'Dribbble', 'dribbble', true)
           li
-            a.button.button--labeled(href='#{urlGithub}', target="_blank")
-              svg.icon
-                use(xlink:href='#github')
-              | Github
+            +ctaLabeled (urlGithub, 'Github', 'github', true)
       .listProject
         +projectLock(
           'Ogustine',

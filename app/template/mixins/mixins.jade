@@ -40,4 +40,14 @@ mixin cta (url, text)
     a.button(href=url, data-text=text, class!=attributes.class)
         span=text
 
-
+mixin ctaLabeled (url, text, icon, external)
+    if external
+        a.button.button--labeled(href=url, data-text=text, target="_blank")
+            svg.icon
+                use(xlink:href='##{icon}')
+            span=text
+    else
+        a.button.button--labeled(href=url, data-text=text)
+            svg.icon
+                use(xlink:href='##{icon}')
+            span=text
