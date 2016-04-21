@@ -30,7 +30,7 @@ gulp.task('styles', function() {
     .pipe(sass({ precision: 10 }))
     .pipe(autoprefixer({ browsers: ['last 2 versions'] }))
     .pipe(!options.production ? sourcemaps.write('.') : gutil.noop())
-    .pipe(options.production ? uncss({html: ['./build/index.html']}) : gutil.noop())
+    .pipe(options.production ? uncss({html: config.pages_list}) : gutil.noop())
     .pipe(options.production ? csso() : gutil.noop())
     .pipe(size({ title: 'style' }))
     .pipe(gulp.dest(config.dest));
