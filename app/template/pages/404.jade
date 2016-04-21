@@ -1,0 +1,14 @@
+extend ../layout/base
+
+append config
+  - var template = 't-fullPage t-404'
+
+block content
+  section.app-main-inner
+    header.hero
+      .wrapper
+        h1.hero-name <span>Allo Houston</span> On a eu un problème
+        p.hero-baseline Désolé, la page que vous cherchez n'existe plus.
+        .hero-button
+          +cta("/", "Retour à l'accueil")(class="button--tertiary")
+      .hero-face

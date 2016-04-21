@@ -10,6 +10,19 @@
    .wrapper {
      position: relative;
      z-index: 3;
+     .t-fullPage & {
+       display: flex;
+       flex-grow: 1;
+       flex-direction: column;
+       justify-content: center;
+       text-align: center;
+     }
+   }
+   .t-fullPage & {
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
    }
  }
 
@@ -21,6 +34,9 @@
   color: $clr-light;
   @media (min-width: $mq-s-up) {
     font-size: em(88);
+    .t-404 & {
+      font-size: em(66);
+    }
   }
   span {
     display: block;
@@ -28,6 +44,9 @@
     font-weight: 400;
     font-style: italic;
     color: $clr-1;
+    .t-404 & {
+      color: $clr-light;
+    }
   }
 }
 
@@ -68,12 +87,14 @@
     margin-top: em(80);
     .button {
       display: flex;
-      text-align: center;
       justify-content: center;
       + .button {
         margin-top: em(30);
       }
     }
+  }
+  .t-fullPage & {
+    text-align: center;
   }
 }
 
@@ -84,11 +105,19 @@
   bottom: 0%;
   left: 0;
   right: 0;
-  @media (min-width: $mq-s-up) {
-    background: url('../img/sutterlity.jpg') right -140px center no-repeat;
-    background-size: auto 100%;
+  .t-404 & {
+    @media (min-width: $mq-s-up) {
+      background: url('../img/404.jpg') center;
+      background-size: cover;
+    }
   }
-  @media (min-width: $mq-m-up) {
-    background-position: calc(50% + 300px) center;
+  .t-home & {
+    @media (min-width: $mq-s-up) {
+      background: url('../img/sutterlity.jpg') right -140px center no-repeat;
+      background-size: auto 100%;
+    }
+    @media (min-width: $mq-m-up) {
+      background-position: calc(50% + 300px) center;
+    }
   }
 }

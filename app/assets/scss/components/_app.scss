@@ -14,4 +14,12 @@
 
 [id="app-main"] {
   flex-grow: 1;
+  .t-fullPage & {
+    display: flex;
+  }
+}
+
+.app-main-inner {
+  display: flex;
+  flex-grow: 1;
 }
