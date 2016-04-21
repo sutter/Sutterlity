@@ -8,7 +8,7 @@ html(lang="#{lang}")
   head
     include ../partials/head
 
-  body
+  body(class=template)
 
     div(style='height: 0; width: 0; position: absolute; visibility: hidden')
       include ../../assets/img/sprite.svg
@@ -18,4 +18,5 @@ html(lang="#{lang}")
         block content
       include ../partials/footer
 
+    //include ../partials/webfont
     include ../partials/analytics
