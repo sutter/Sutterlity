@@ -24,11 +24,16 @@ block content
           p.pod-bigTitle Design & code
           svg.divider
             use(xlink:href='#divider')
-          p.txtLead Bonjour, je suis Laurent Sutterlity, freelance sur Paris. Créatif et passionné, je suis disponible pour vous accompagner lors de la réalisation de votre projet web depuis le conseil jusqu’à la livraison.
+          p.txtLead
+            | Bonjour, je suis Laurent Sutterlity, freelance à Paris. Créatif et passionné, je suis disponible
+            | pour vous accompagner dans la réalisation de votre projet web du conseil à la livraison.
         .grid
           .grid-2-4
             h3.pod-smallTitle UI Designer
-            p J'interviens sur la hiérarchisation de l'information et la création de prototypes de pages. Je rends votre projet créatif, intuitif, en assure une lecture agréable et facilite la navigation de l'utilisateur.
+            p
+              | J'interviens sur la hiérarchisation de l'information et la création de prototypes de pages. Je rends
+              | votre projet créatif, intuitif, en assure une lecture agréable et facilite la navigation de
+              l'utilisateur.
             ul.tag
               li.tag-item UI DEsign
               li.tag-item UX Design
@@ -41,7 +46,11 @@ block content
               li.tag-item Principle
           .grid-2-4
             h3.pod-smallTitle Développeur front-end
-            p Je code dans les règles de l’art en HTML (HTML5, Jade), CSS (CSS3, Sass) et JavaScript. Je suis également adepte du Mobile-First et pense performance web.
+            p
+              | Je code dans les règles de l’art en HTML, CSS et JavaScript. Je suis également adepte du Mobile-First
+              | et pense maintenabilité.
+              | Voici mon <a href="https://github.com/sutter/helloFront"target="_blank">framework CSS</a>
+              | mon principal outil de travail.
             ul.tag
               li.tag-item HTML
               li.tag-item CSS
@@ -65,7 +74,9 @@ block content
     .quote
       .wrapper
         blockquote
-          p Apprendre continuellement et produire la meilleure expérience utilisateur possible est ce qui me stimule dans mon travail.
+          p
+            | Apprendre continuellement et produire la meilleure expérience utilisateur possible sont les principes qui
+            | guident mon travail.
 
   section#references.pod
     .wrapper
@@ -83,8 +94,19 @@ block content
             +ctaLabeled (urlGithub, 'Dev-Front', 'github', true)
       .listProject
         +projectLock(
+          'Festival de Couthures',
+          '2016',
+          "UI design et intégration web dans un environnement Rails en collaboration avec l'équipe E-lam, pour l'e " +
+          "magazine XXI."
+        )
+        +projectLock(
+          'Startup Project',
+          '2016',
+          "Intégration web dans un environnement Rails en collaboration avec l'équipe E-lam, pour l'AACC Cap Digital."
+        )
+        +projectLock(
           'Ogustine',
-          '2015',
+          '2016',
           "Intégration web dans un environnement Rails en collaboration avec l'équipe E-lam."
         )
         +project(
@@ -96,52 +118,48 @@ block content
         +projectLock(
           'Home By Me',
           '2015',
-          "Réalisation de la charte graphique, UI/UX design et intégration de l'application web pour 3DVIA (Dassault" +
+          "Réalisation de la charte graphique UI/UX design et intégration de l'application web pour 3DVIA (Dassault" +
           " System)"
         )
         +project(
           'Delight Data',
           'http://delight-data.com/fr/',
           '2015',
-          "UI design et développement de thème WordPress. Intégration web dans un environnement Rails en " +
+          "UI design et développement du thème WordPress. Intégration web dans un environnement Rails en " +
           "collaboration " +
           "avec l'équipe E-lam."
         )
-        +project(
+        +projectLock(
           'SNCF',
-          '#',
           '2015',
           "UI design, conversion d'une DA d'Illustrator vers Sketch APP pour l'agence WeDoData."
         )
-        +project(
+        +projectLock(
           'Monitoraide',
-          '#',
           '2015',
           "UI design et intégration web dans un environnement Rails en collaboration avec l'équipe E-lam."
         )
         +project(
           'StartupAssembly',
-          '#',
+          'http://www.startupassembly.co/',
           '2015',
           "Refonte de l'UI design et intégration web dans un environnement Rails en collaboration avec l'équipe E-lam."
         )
-        +project(
+        +projectLock(
           'Pyramidale Communication',
-          '#',
           '2015',
           "UI design de diverses applications mobile dans l'univers du médical."
         )
-        +project(
+        +projectLock(
           'FNAC',
-          '#',
           '2015',
-          "Intégration web sur le wizzard d'achat et création de newsletter."
+          "Intégration web sur le wizzard d'achat et création de newsletters."
         )
         +project(
           'Greaaat',
-          '#',
+          'http://greaaat.com/',
           '2015',
-          "UI design et développement de thème WordPress."
+          "UI design et développement du thème WordPress."
         )
         +projectLock(
           'Arval BNP',
@@ -163,7 +181,7 @@ block content
         +projectLearning(
           'Formateur indépendant',
           '2015 - 2013',
-          "Formateur indépendant (HTML, CSS, jQuery, WordPress, UI Design) pour IESA Multimédia, Ziggourat formation," +
+          "Formateur (HTML, CSS, jQuery, WordPress, UI Design) pour IESA Multimédia, Ziggourat formation," +
           " Orsys, etc."
         )
 
@@ -180,4 +198,4 @@ block content
           +cta("mailto:laurent@sutterlity.fr", "laurent@sutterlity.fr")(class="button--tertiary")
         p.txtSmall.u-mbn
           | Pour toute demande de prestation, merci de m’indiquer votre budget<br/> ainsi que vos délais.
-          | N’oubliez pas de me joindre un cahier des charges.
+          | N’oubliez pas de me joindre votre cahier des charges.
