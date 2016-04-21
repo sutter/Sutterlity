@@ -22,6 +22,7 @@ gulp.task('svgstore', function () {
     .pipe(cheerio({
       run: function ($) {
         $('[fill]').removeAttr('fill');
+        $('[stroke]').removeAttr('stroke');
       },
       parserOptions: { xmlMode: true }
     }))

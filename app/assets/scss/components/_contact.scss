@@ -8,13 +8,12 @@
    background: $clr-1 url('../img/hands.jpg') center;
    background-size: cover;
 
-   .pod-customTitle {
+   .pod-mediumTitle {
      color: $clr-light;
-     font-family: $custom-font-family;
-     &::after {
-       background: $clr-light;
-     }
-     margin-bottom: em(30, 34);
+   }
+
+   .divider {
+     stroke: $clr-light;
    }
 
    .txtLead {

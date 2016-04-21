@@ -1,0 +1,10 @@
+/** ======================================
+ * Component : Divider
+ * ======================================= */
+
+ .divider {
+   width: em(100);
+   height: em(12);
+   stroke: $clr-0-darken;
+   fill: none;
+ }

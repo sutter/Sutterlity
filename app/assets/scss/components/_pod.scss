@@ -25,13 +25,8 @@
   line-height: 1;
   text-transform: uppercase;
   color: $clr-0-darken;
-  &::after {
-    content: '';
-    display: block;
-    width: em(66, 41);
-    height: em(4, 41);
-    margin: em(20, 41) auto em(80, 41);
-    background: $clr-0-darken;
+  + .divider {
+    margin: em(5) auto em(60);
   }
 }
 
@@ -50,13 +45,9 @@
   line-height: 1;
   text-transform: uppercase;
   color: $clr-0-darken;
-  &::after {
-    content: '';
-    display: block;
-    width: em(50, 34);
-    height: em(4, 34);
-    margin: em(20, 34) auto em(80, 34);
-    background: $clr-0-darken;
+  + .divider {
+    height: em(10);
+    margin: em(20) auto em(40);
   }
 }
 

@@ -24,6 +24,9 @@
      flex-direction: column;
      justify-content: center;
    }
+   .divider {
+     stroke: $clr-light;
+   }
  }
 
 .hero-name {
@@ -40,9 +43,8 @@
   }
   span {
     display: block;
-    font-size: 50%;
+    font-size: 40%;
     font-weight: 400;
-    font-style: italic;
     color: $clr-1;
     .t-404 & {
       color: $clr-light;
@@ -57,18 +59,6 @@
   text-transform: uppercase;
   @media (min-width: $mq-s-up) {
     font-size: em(17);
-  }
-  &::after {
-    content: '';
-    display: block;
-    width: em(40, 14);
-    height: em(3, 14);
-    margin: em(20, 14) 0;
-    background: $clr-light;
-    @media (min-width: $mq-s-up) {
-      width: em(50, 17);
-      height: em(6, 17);
-    }
   }
 }
 

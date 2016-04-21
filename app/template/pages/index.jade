@@ -9,6 +9,8 @@ block content
       .wrapper
         p.hero-name <span>Laurent</span> Sutterlity
         h1.hero-title  UI designer / Développeur front-end
+        svg.divider
+          use(xlink:href='#divider')
         p.hero-baseline Je suis spécialisé dans le design d'interface utilisateur <br/> et le développement front-end pour startup & web agency.
         .hero-button
           +cta("#references", "Mes références")
@@ -20,6 +22,8 @@ block content
         .pod-header
           h2.pod-title Creative developper
           p.pod-bigTitle Design & code
+          svg.divider
+            use(xlink:href='#divider')
           p.txtLead Bonjour, je suis Laurent Sutterlity, freelance sur Paris. Créatif et passionné, je suis disponible pour vous accompagner lors de la réalisation de votre projet web depuis le conseil jusqu’à la livraison.
         .grid
           .grid-2-4
@@ -68,6 +72,8 @@ block content
       .pod-header
         h2.pod-title Portfolio
         .pod-mediumTitle Mes références
+        svg.divider
+          use(xlink:href='#divider')
         p.txtLead J’ai eu la chance et l’opportunité de travailler pour de grandes agences sur des budgets importants tels que Ferrari, SFR, Dassault, BNP, Le Grand Palais, BPI ,Carrefour, etc.
         p Voici un échantillon de projets sur lesquels je suis intervenu.
         ul.listInline.u-txtCenter
@@ -165,7 +171,9 @@ block content
     .wrapper
       .pod-header.u-mbn
         h2.pod-title Contact
-        p.pod-customTitle Travaillons ensemble
+        .pod-mediumTitle Travaillons ensemble
+        svg.divider
+          use(xlink:href='#divider')
         p.txtLead
           | Vous avez un projet et vous pensez que nous pouvons travailler ensemble ?<br/> N’hésitez pas à me contacter.
         p.u-mtm.u-mbm
