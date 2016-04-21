@@ -4,11 +4,21 @@
  
  [id=contact] {
    padding: em(80) 0;
-   color: $clr-1-darken;
-   background: $clr-1;
+   color: $clr-light;
+   background: $clr-1 url('../img/hands.jpg') center;
+   background-size: cover;
 
-   .pod-mediumTitle::after {
+   .pod-customTitle {
+     color: $clr-light;
+     font-family: $custom-font-family;
+     &::after {
+       background: $clr-light;
+     }
      margin-bottom: em(30, 34);
+   }
+
+   .txtLead {
+     color: $clr-light;
    }
 
    .txtSmall {

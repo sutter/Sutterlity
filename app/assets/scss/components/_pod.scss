@@ -35,6 +35,14 @@
   }
 }
 
+.pod-customTitle {
+  font-size: em(41);
+  font-family: $custom-font-family;
+  font-weight: 700;
+  line-height: 1;
+  color: $clr-0-darken;
+}
+
 
 .pod-mediumTitle {
   font-size: em(34);
