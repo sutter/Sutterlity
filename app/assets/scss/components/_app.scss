@@ -10,6 +10,9 @@
   @media (min-width: $mq-s-up) {
     border: em(20) solid $clr-1;
   }
+  .t-404 & {
+    background: $clr-1;
+  }
 }
 
 [id="app-main"] {
