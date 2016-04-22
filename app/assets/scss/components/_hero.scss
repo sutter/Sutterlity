@@ -65,9 +65,9 @@
 
 .hero-baseline {
   color: $clr-light;
-  @media (max-width: $mq-s) {
-    br {
-      display: none;
+  @media (min-width: $mq-s-up) {
+    span {
+      display: block;
     }
   }
 }
