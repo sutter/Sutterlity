@@ -9,4 +9,20 @@
      padding-right: em(80);
      padding-left: em(80);
    }
+
+   .listInline {
+    @media (max-width: $mq-s) {
+      > li {
+        display: block;
+      }
+      li + li {
+        margin-top: em(20);
+      }
+      .button {
+        display: block;
+        width: auto;
+      }
+    }
+   }
+
  }
