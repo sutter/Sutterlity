@@ -11,11 +11,12 @@ block content
         h1.hero-title  UI designer / Développeur front-end
         svg.divider
           use(xlink:href='#divider')
-        p.hero-baseline Je suis spécialisé dans le design d'interface utilisateur <span>et le développement front-end
-        pour startup & web agency.</span>
+        p.hero-baseline
+          | Je suis spécialisé dans le design d'interface utilisateur
+          | <span>et le développement front-end pour startup & web agency.</span>
         .hero-button
-          +cta("#references", "Mes références")
-          +cta("#contact", "Contact")(class="button--secondary")
+          +cta("#references", "Mes références", "Mes références")
+          +cta("#contact", "Contact", "Contact")(class="button--secondary")
       .hero-face
 
     #services.pod
@@ -196,7 +197,7 @@ block content
         p.txtLead
           | Vous avez un projet et vous pensez que nous pouvons travailler ensemble ?<br/> N’hésitez pas à me contacter.
         p.u-mtm.u-mbm
-          +cta("mailto:laurent@sutterlity.fr", "laurent@sutterlity.fr")(class="button--tertiary")
+          +cta("mailto:laurent@sutterlity.fr", "laurent@sutterlity.fr", "Contactez-moi")(class="button--tertiary")
         p.txtSmall.u-mbn
           | Pour toute demande de prestation, merci de m’indiquer votre budget<br/> ainsi que vos délais.
           | N’oubliez pas de me joindre votre cahier des charges.

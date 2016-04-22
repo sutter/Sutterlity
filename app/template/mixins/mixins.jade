@@ -36,8 +36,8 @@ mixin socialItem (name, svg, url)
                 use(xlink:href='##{svg}')
             .social-name=name
 
-mixin cta (url, text)
-    a.button(href=url, data-text=text, class!=attributes.class)
+mixin cta (url, text, hoverText)
+    a.button(href=url, data-text=hoverText, class!=attributes.class)
         span=text
 
 mixin ctaLabeled (url, text, icon, external)
