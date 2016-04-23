@@ -11,12 +11,16 @@
    }
 
    .listInline {
+     li + li  {
+       margin-left: em(20);
+     }
     @media (max-width: $mq-s) {
       > li {
         display: block;
       }
       li + li {
         margin-top: em(20);
+        margin-left: 0;
       }
       .button {
         display: block;
