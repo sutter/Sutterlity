@@ -21,9 +21,9 @@
    }
 
    .txtSmall {
-     br {
-       @media (max-width: $mq-m) {
-         display: none;
+     @media (min-width: em(560, 14)) {
+       span {
+         display: block;
        }
      }
    }
