@@ -65,14 +65,6 @@ Run project before.
 gulp --production
 ```
 
-### Deploy on GithubPages
-
-Run project before.
-
-```
-gulp gh-pages
-```
-
 ## How the starter works
 
 ### Works with SCSS
