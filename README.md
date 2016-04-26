@@ -141,10 +141,3 @@ The font files are located in `./app/assets/font`
 
 Add svg files in folder `./app/assets/img/sprite` and uncomment lines *17 & 18* of file `./app/template/layout/base.jade`
 
-### Works with icons font
-
-ADD SVG Files in folder `./app/assets/icons` and gulp made magic.
-
-* Icon format: svg
-* Icon size: 512x512
-* Vectorize stroke
