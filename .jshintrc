@@ -8,9 +8,5 @@
   "noarg": true,
   "undef": true,
   "unused": "vars",
-  "strict": true,
-  "globals": {
-    "jQuery": true,
-    "hljs":true
-  }
+  "strict": true
 }
