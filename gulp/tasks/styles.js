@@ -27,7 +27,7 @@ gulp.task('styles', function() {
       errorHandler: notify.onError('SASS Error: <%= error.message %>')
     }))
     .pipe(!options.production ? sourcemaps.init() : gutil.noop())
-    .pipe(sass({ precision: 10 }))
+    .pipe(sass({ precision: 3 }))
     .pipe(autoprefixer({ browsers: ['last 2 versions'] }))
     .pipe(!options.production ? sourcemaps.write('.') : gutil.noop())
     .pipe(options.production ? uncss({html: config.pages_list}) : gutil.noop())
