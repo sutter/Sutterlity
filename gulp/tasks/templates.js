@@ -5,6 +5,7 @@ var plumber      = require('gulp-plumber');
 var notify       = require('gulp-notify');
 var gutil        = require("gulp-util");
 var htmlmin      = require('gulp-htmlmin');
+var replace      = require('gulp-replace');
 var size         = require('gulp-size');
 var options      = require('minimist')(process.argv.slice(2));
 
@@ -19,6 +20,7 @@ gulp.task('templates', function() {
       locals: YOUR_LOCALS
     }))
     .pipe(options.production ? htmlmin({collapseWhitespace: true}) : gutil.noop())
+    .pipe(options.production ? replace(config.urlLocal, config.urlProd) : gutil.noop())
     .pipe(size({ title: 'template' }))
     .pipe(gulp.dest(config.dest));
 });

@@ -42,7 +42,9 @@ module.exports = {
     files_src:  app + '/template/**/*.jade',
     page_src:   app + '/template/pages/**/*.jade',
     dest:       build,
-    files_dest: build + '/**/*.html'
+    files_dest: build + '/**/*.html',
+    urlLocal : 'http://localhost:3000',
+    urlProd : 'http://sutterlity.fr'
   },
 
   images: {
