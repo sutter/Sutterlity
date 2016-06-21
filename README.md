@@ -57,12 +57,11 @@ gulp clean
 
 * Minify HTML
 * Uglify Script
+* Replace local URL to domain URL
 * Optimise and minify styles with CSSO, UNCSS for remove unused CSS the stylesheet
 
-Run project before.
-
 ```
-gulp --production
+gulp build --production
 ```
 
 ## How the starter works
