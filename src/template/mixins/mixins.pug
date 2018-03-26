@@ -31,9 +31,9 @@ mixin projectLearning(title, time, decription)
 
 mixin socialItem (name, svg, url)
     li.social-item
-        a.social-link(href="#{url}", target="_blank")
+        a.social-link(href=url, target="_blank")
             svg.social-icon
-                use(xlink:href='##{svg}')
+                use(xlink:href= svg)
             .social-name=name
 
 mixin cta (url, text, hoverText)
@@ -44,10 +44,10 @@ mixin ctaLabeled (url, text, icon, external)
     if external
         a.button.button--labeled(href=url, data-text=text, target="_blank")
             svg.icon
-                use(xlink:href='##{icon}')
+                use(xlink:href= icon)
             span=text
     else
         a.button.button--labeled(href=url, data-text=text)
             svg.icon
-                use(xlink:href='##{icon}')
+                use(xlink:href= icon)
             span=text

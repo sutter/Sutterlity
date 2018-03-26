@@ -1,34 +1,34 @@
 /** ======================================
  * Component : Hero
  * ======================================= */
- 
- .hero {
-   position: relative;
-   padding: em(160) 0;
-   background: $clr-0-darken;
-   overflow: hidden;
-   .wrapper {
-     position: relative;
-     z-index: 3;
-     .t-fullPage & {
-       display: flex;
-       flex-grow: 1;
-       flex-direction: column;
-       justify-content: center;
-       text-align: center;
-     }
-   }
-   .t-fullPage & {
-     width: 100%;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-   }
-   .divider {
-     stroke: $clr-light;
-   }
- }
+
+.hero {
+  position: relative;
+  padding: em(160) 0;
+  background: $clr-0-darken;
+  overflow: hidden;
+  .wrapper {
+    position: relative;
+    z-index: 3;
+    .t-fullPage & {
+      display: flex;
+      flex-grow: 1;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+  .t-fullPage & {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .divider {
+    stroke: $clr-light;
+  }
+}
 
 .hero-name {
   font-family: $custom-font-family;
@@ -101,13 +101,13 @@
   right: 0;
   .t-404 & {
     @media (min-width: $mq-s-up) {
-      background: url('../img/hands.jpg') center;
+      background: url("hands.jpg") center;
       background-size: cover;
     }
   }
   .t-home & {
     @media (min-width: $mq-s-up) {
-      background: url('../img/sutterlity.jpg') right -140px center no-repeat;
+      background: url("sutterlity.jpg") right -140px center no-repeat;
       background-size: auto 100%;
     }
     @media (min-width: $mq-m-up) {

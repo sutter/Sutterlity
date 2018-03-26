@@ -1,0 +1,30 @@
+/** ======================================
+ * Component : Services
+ * ======================================= */
+
+[id="services"] {
+  background-color: $clr-0-lighten;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: -280px;
+  @media (min-width: $mq-l-up) {
+    background-image: url(pattern-light.jpg);
+  }
+  .wrapper {
+    position: relative;
+    z-index: 4;
+    background: $clr-light;
+    padding-top: em(60);
+    padding-bottom: em(246);
+    transform: translateY(-50px);
+    @media (min-width: $mq-m-up) {
+      padding-left: em(85);
+      padding-right: em(85);
+    }
+  }
+  .grid-2-4 + .grid-2-4 {
+    @media (max-width: $mq-m) {
+      margin-top: em(60);
+    }
+  }
+}

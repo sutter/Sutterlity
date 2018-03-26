@@ -1,12 +1,12 @@
-var gulp         = require('gulp');
-var runSequence  = require('run-sequence');
+const gulp = require("gulp");
+const runSequence = require("run-sequence");
 
-gulp.task('build', function(callback){
+gulp.task("build", callback => {
   runSequence(
-    'clean',
-    'svgstore',
-    ['normalize', 'templates', 'images', 'rootfiles','scripts'],
-    'styles',
+    "clean",
+    "svg",
+    "svgstore",
+    ["styles", "templates", "images", "rootfiles", "fonts"],
     callback
-  )
+  );
 });

@@ -1,7 +1,7 @@
 extend ../layout/base
 
 append config
-  - var template = 't-home'
+  - var template = "t-home"
 
 block content
   section
@@ -28,15 +28,10 @@ block content
           svg.divider
             use(xlink:href='#divider')
           p.txtLead
-            | Bonjour, je suis Laurent Sutterlity, freelance à Paris. Créatif et passionné, je suis disponible
-            | pour vous accompagner dans la réalisation de votre projet web du conseil à la livraison.
+            | Bonjour, je suis Laurent Sutterlity, freelance à Paris. Je suis membre d'<a href="https://www.alqemist.com/">Alqemist</a> collectif d'experts en technologie, design et stratégie. Créatif et passionné, je suis disponible pour vous accompagner dans la réalisation de votre projet web du conseil à la livraison.
         .grid
           .grid-2-4
             h3.pod-smallTitle UI Designer
-            p
-              | J'interviens sur la hiérarchisation de l'information et la création de prototypes de pages. Je rends
-              | votre projet créatif, intuitif, en assure une lecture agréable et facilite la navigation de
-              | l'utilisateur.
             ul.tag
               li.tag-item UI Design
               li.tag-item UX Design
@@ -46,29 +41,23 @@ block content
               li.tag-item Photoshop
               li.tag-item Illustrator
               li.tag-item Invision
-              li.tag-item Principle
           .grid-2-4
             h3.pod-smallTitle Développeur front-end
-            p
-              | Je code dans les règles de l’art en HTML, CSS et JavaScript. Je suis également adepte du Mobile-First et pense maintenabilité.
-              | Voici mon <a href="https://github.com/sutter/helloFront"target="_blank">framework CSS</a> mon principal outil de travail.
             ul.tag
               li.tag-item HTML
               li.tag-item CSS
               li.tag-item JavaScript
+              li.tag-item React
               li.tag-item Responsive
-              li.tag-item Mobile first
-              li.tag-item WordPress
               li.tag-item SCSS
-              li.tag-item Pug/Jade
-              li.tag-item Gulp
+              li.tag-item Pug
               li.tag-item Git
       .data
         .data-item
-          .data-title 57
+          .data-title 63
           .data-legend Missions freelance
         .data-item
-          .data-title 07
+          .data-title 08
           .data-legend Années d'expérience
 
     .quote
@@ -90,25 +79,52 @@ block content
           | Voici un échantillon de projets sur lesquels je suis intervenu.
         ul.listInline.u-txtCenter
           li
-            +ctaLabeled (urlPlayBook, 'UI design', 'dribbble', true)
+            +ctaLabeled (urlPlayBook, 'UI design', '#dribbble', true)
           li
-            +ctaLabeled (urlGithub, 'Dev-Front', 'github', true)
+            +ctaLabeled (urlGithub, 'Dev-Front', '#github', true)
       .listProject
+        +project(
+          'Alqemist',
+          'https://www.alqemist.com/',
+          '2018',
+          "UI design et développement front-end du portfolio du product studio. Utilisation de React, Gatsby JS, styled-components et netlify."
+        )
+        +project(
+          'Udeal',
+          'https://udeal.fr/',
+          '2018',
+          "Intégration web dans un environnement Rails en collaboration avec l'équipe Alqemist."
+        )
         +projectLock(
-          'Festival de Couthures',
-          '2016',
-          "UI design et intégration web dans un environnement Rails en collaboration avec l'équipe E-lam, pour le " +
-          "magazine XXI."
+          'Mogment',
+          '2018',
+          "UI design de l'application de gestion de rapport d’activité de collaborateurs."
+        )
+        +project(
+          'Meaningful',
+          'http://www.meaningful.fr/',
+          '2017',
+          "Développement front-end du portfolio du studio de design stratégique. Utilisation de React, styled-components et netlify."
+        )
+        +projectLock(
+          'Cabestan',
+          '2017',
+          "Développement front-end de prototype (React) et création d'un framework CSS avec génération de styldeguide en collaboration avec l'équipe Alqemist."
+        )
+        +projectLock(
+          'People by Total',
+          '2017',
+          "Intégration web dans un environnement Rails en collaboration avec l'équipe Alqemist, pour Total."
         )
         +projectLock(
           'Startup Project',
           '2016',
-          "Intégration web dans un environnement Rails en collaboration avec l'équipe E-lam, pour l'AACC Cap Digital."
+          "Intégration web dans un environnement Rails en collaboration avec l'équipe Alqemist, pour l'AACC Cap Digital."
         )
         +projectLock(
           'Ogustine',
           '2016 - 2015',
-          "Intégration web dans un environnement Rails en collaboration avec l'équipe E-lam."
+          "Intégration web dans un environnement Rails en collaboration avec l'équipe Alqemist."
         )
         +project(
           'Chausson Finances',
@@ -126,7 +142,7 @@ block content
           'Delight Data',
           'http://delight-data.com/fr/',
           '2016 - 2015',
-          "UI design et développement du thème WordPress. Intégration web dans un environnement Rails en collaboration avec l'équipe E-lam."
+          "UI design et développement du thème WordPress. Intégration web dans un environnement Rails en collaboration avec l'équipe Alqemist."
         )
         +projectLock(
           'SNCF',
@@ -136,13 +152,13 @@ block content
         +projectLock(
           'Monitoraide',
           '2015',
-          "UI design et intégration web dans un environnement Rails en collaboration avec l'équipe E-lam."
+          "UI design et intégration web dans un environnement Rails en collaboration avec l'équipe Alqemist."
         )
         +project(
           'StartupAssembly',
           'http://www.startupassembly.co/',
           '2015',
-          "Refonte de l'UI design et intégration web dans un environnement Rails en collaboration avec l'équipe E-lam."
+          "Refonte de l'UI design et intégration web dans un environnement Rails en collaboration avec l'équipe Alqemist."
         )
         +projectLock(
           'Pyramidale Communication',

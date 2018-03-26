@@ -1,26 +1,25 @@
-var gulp         = require('gulp');
-var config       = require('../config').templates;
-var jade         = require('gulp-jade');
-var plumber      = require('gulp-plumber');
-var notify       = require('gulp-notify');
-var gutil        = require("gulp-util");
-var htmlmin      = require('gulp-htmlmin');
-var replace      = require('gulp-replace');
-var size         = require('gulp-size');
-var options      = require('minimist')(process.argv.slice(2));
+const gulp = require("gulp");
+const config = require("../config").templates;
+const pug = require("gulp-pug");
+const plumber = require("gulp-plumber");
+const notify = require("gulp-notify");
+const gutil = require("gulp-util");
+const htmlmin = require("gulp-htmlmin");
+const size = require("gulp-size");
+const options = require("minimist")(process.argv.slice(2));
 
-gulp.task('templates', function() {
-  var YOUR_LOCALS = {};
-  return gulp.src(config.page_src)
-    .pipe(plumber({
-      errorHandler: notify.onError('JADE Error: <%= error.message %>')
-    }))
-    .pipe( jade({
-      pretty: true,
-      locals: YOUR_LOCALS
-    }))
-    .pipe(options.production ? htmlmin({collapseWhitespace: true}) : gutil.noop())
-    .pipe(options.production ? replace(config.urlLocal, config.urlProd) : gutil.noop())
-    .pipe(size({ title: 'template' }))
-    .pipe(gulp.dest(config.dest));
+gulp.task("templates", () => {
+  return gulp
+    .src(config.page_src)
+    .pipe(
+      plumber({
+        errorHandler: notify.onError("PUG Error: <%= error.message %>"),
+      })
+    )
+    .pipe(pug({ pretty: true }))
+    .pipe(
+      options.production ? htmlmin({ collapseWhitespace: true }) : gutil.noop()
+    )
+    .pipe(size({ title: "template" }))
+    .pipe(gulp.dest(config.dist));
 });

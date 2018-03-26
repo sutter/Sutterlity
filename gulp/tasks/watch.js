@@ -1,37 +1,27 @@
-var gulp         = require('gulp');
-var config       = require('../config');
-var browserSync  = require('browser-sync');
-var watch        = require('gulp-watch');
-var reload       = browserSync.reload;
+const gulp = require("gulp");
+const config = require("../config");
+const browserSync = require("browser-sync");
+const watch = require("gulp-watch");
+const runSequence = require("run-sequence");
 
-gulp.task('watch', function () {
-
-  watch(config.styles.files_src, function() {
-    gulp.start('styles');
-    reload();
+gulp.task("watch", () => {
+  watch(config.styles.files_src, "./src/assets", function() {
+    runSequence("styles");
   });
 
-  watch(config.images.files_src, function() {
-    gulp.start('images');
-    reload();
+  watch(config.images.files_src, () => {
+    runSequence("images", browserSync.reload);
   });
 
-  watch(config.templates.files_src, function() {
-    gulp.start('templates');
-    reload();
+  watch(config.templates.files_src, () => {
+    runSequence("templates", browserSync.reload);
   });
 
-  watch(config.scripts.files_src, function() {
-    gulp.start('scripts');
+  watch(config.font_icon.files_src, () => {
+    runSequence("font-icon", "styles", browserSync.reload);
   });
 
-  watch(config.scripts.main_dest, function() {
-    reload();
+  watch(config.fonts.src, () => {
+    runSequence("fonts", browserSync.reload);
   });
-
-  watch(config.fonts.src, function() {
-    gulp.start('fonts');
-    reload();
-  });
-
 });

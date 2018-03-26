@@ -11,8 +11,7 @@
 node_modules
 
 # Generated folder
-build
+dist
 
 # Generated files
-app/assets/scss/base/_b-normalize.scss
 app/assets/img/sprite.svg
