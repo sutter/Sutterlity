@@ -14,7 +14,7 @@ block content
         p.hero-baseline
           | Je suis spécialisé dans le design d'interface utilisateur
           span
-            | &nbsp;et le développement front-end pour startup & web agency
+            | &nbsp;et le développement front-end pour startup.
         .hero-button
           +cta("#references", "Mes références", "Mes références")
           +cta("#contact", "Contact", "Contact")(class="button--secondary")
@@ -28,19 +28,16 @@ block content
           svg.divider
             use(xlink:href='#divider')
           p.txtLead
-            | Bonjour, je suis Laurent Sutterlity, freelance à Paris. Je suis membre d'<a href="https://www.alqemist.com/">Alqemist</a> collectif d'experts en technologie, design et stratégie. Créatif et passionné, je suis disponible pour vous accompagner dans la réalisation de votre projet web du conseil à la livraison.
+            | Créatif et passionné, je suis disponible pour vous accompagner de la conception jusqu’au développement de votre projet.
         .grid
           .grid-2-4
             h3.pod-smallTitle UI Designer
             ul.tag
-              li.tag-item UI Design
-              li.tag-item UX Design
+              li.tag-item Atelier de conception
               li.tag-item Wireframe
-              li.tag-item Ergonomie
-              li.tag-item Sketch
-              li.tag-item Photoshop
-              li.tag-item Illustrator
-              li.tag-item Invision
+              li.tag-item Wireflow
+              li.tag-item Design systeme
+              li.tag-item Design d'application web
           .grid-2-4
             h3.pod-smallTitle Développeur front-end
             ul.tag
@@ -48,16 +45,17 @@ block content
               li.tag-item CSS
               li.tag-item JavaScript
               li.tag-item React
-              li.tag-item Responsive
-              li.tag-item SCSS
-              li.tag-item Pug
-              li.tag-item Git
+              li.tag-item Gatsby
+              li.tag-item CSS-in-JS
+              li.tag-item Performance
+              li.tag-item SEO
+              li.tag-item Accessibilité
       .data
         .data-item
-          .data-title 63
+          .data-title 79
           .data-legend Missions freelance
         .data-item
-          .data-title 08
+          .data-title 10
           .data-legend Années d'expérience
 
     .quote
@@ -74,7 +72,7 @@ block content
         svg.divider
           use(xlink:href='#divider')
         p.txtLead
-          | J’ai eu la chance et l’opportunité de travailler pour de grandes agences sur des budgets importants tels que Ferrari, SFR, Dassault, BNP, Le Grand Palais, BPI, Carrefour, etc.
+          | Ensemble, construisons un produit superbe & pragmatique pour vos utilisateurs.
         p
           | Voici un échantillon de projets sur lesquels je suis intervenu.
         ul.listInline.u-txtCenter
@@ -84,21 +82,50 @@ block content
             +ctaLabeled (urlGithub, 'Dev-Front', '#github', true)
       .listProject
         +project(
+          'Early Birds',
+          'https://www.early-birds.io/',
+          '2019',
+          "Développement front-end du site vitrine et blog avec Gatbsy et Prismic pour l'API."
+        )
+        +projectLock(
+          'Testapic',
+          '2019',
+          "Réalisation d'un design systeme pour l'application de test utilisateurs"
+        )
+        +project(
+          'Station',
+          'https://getstation.com/',
+          '2018',
+          "Développement front-end du site vitrine avec Gatbsy et Prismic pour l'API."
+        )
+        +projectLock(
+          'Safran',
+          '2019',
+          "Création d'une librairie de composants react pour applications internes de lecture de boites noires."
+        )
+        +project(
+          'Mogment',
+          'https://www.mogment.com/',
+          '2018',
+          "UI design de l'application de gestion de rapport d’activité de collaborateurs et développement front-end du site vitrine avec Gatbsy et Prismic pour l'API."
+        )
+        +project(
           'Alqemist',
           'https://www.alqemist.com/',
           '2018',
           "UI design et développement front-end du portfolio du product studio. Utilisation de React, Gatsby JS, styled-components et netlify."
         )
         +project(
+          'Dospatch',
+          'https://www.dospatch.com/',
+          '2018',
+          "UI design de la landing page de l'application de plannification de projet."
+        )
+        +project(
           'Udeal',
           'https://udeal.fr/',
           '2018',
           "Intégration web dans un environnement Rails en collaboration avec l'équipe Alqemist."
-        )
-        +projectLock(
-          'Mogment',
-          '2018',
-          "UI design de l'application de gestion de rapport d’activité de collaborateurs."
         )
         +project(
           'Meaningful',
