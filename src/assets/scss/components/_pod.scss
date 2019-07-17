@@ -21,6 +21,7 @@
 
 .pod-bigTitle {
   font-size: em(41);
+  font-weight: 700;
   font-family: $header-font-family;
   line-height: 1;
   text-transform: uppercase;
@@ -30,14 +31,6 @@
   }
 }
 
-.pod-customTitle {
-  font-size: em(41);
-  font-family: $custom-font-family;
-  font-weight: 700;
-  line-height: 1;
-  color: $clr-0-darken;
-}
-
 
 .pod-mediumTitle {
   font-size: em(34);
@@ -45,6 +38,8 @@
   line-height: 1;
   text-transform: uppercase;
   color: $clr-0-darken;
+  font-weight: 700;
+  
   + .divider {
     height: em(10);
     margin: em(20) auto em(40);
@@ -52,9 +47,10 @@
 }
 
 .pod-smallTitle {
-  font-size: em(20);
+  font-size: em(18);
   text-transform: uppercase;
   color: $clr-0-darken;
+  font-weight: 700;
   &::after {
     content: '';
     display: block;
@@ -62,5 +58,6 @@
     height: em(2, 20);
     margin: em(10, 20) 0;
     background: $clr-1;
+    border-radius: 666rem;
   }
 }

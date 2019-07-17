@@ -55,13 +55,14 @@ a.listProject-item {
   display: flex;
   align-items: center;
   font-family: $header-font-family;
+  font-weight: 700;
   color: $clr-0-darken;
   transition: $trans;
   .anchor {
     width: em(15);
     height: em(8);
     margin-right: em(10);
-    fill: $clr-0-darken;
+    fill: $clr-1;
     transition: $trans;
   }
   .lock {
@@ -80,7 +81,7 @@ a.listProject-item {
 
 .listProject-legend {
   font-size: em(12);
-  color: $clr-0-light;
+  color: $clr-0;
   margin-left: em(15,14);
   &:before {
     content: '•';
@@ -91,6 +92,5 @@ a.listProject-item {
 
 .listProject-txt {
   font-size: em(14);
-  line-height: 1.25;
-  font-style: italic;
+  line-height: 1.5;
 }

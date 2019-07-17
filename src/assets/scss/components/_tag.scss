@@ -16,8 +16,7 @@
   padding: em(5,14) em(15,14);
   font-size: em(14);
   line-height: 1;
-  font-style: italic;
-  background: shade($clr-0-lighten, 2%);
-  color: tint($clr-0, 25%);
+  background: $clr-0-lighten;
+  color: $clr-0;
   border-radius: em(666);
 }
