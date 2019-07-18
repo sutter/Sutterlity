@@ -8,7 +8,7 @@ block content
     header.hero
       .wrapper
         p.hero-name <span>Laurent</span> Sutterlity
-        h1.hero-title  Product designer / Développeur front-end
+        h1.hero-title Développeur front-end / UI designer
         svg.divider
           use(xlink:href='#divider')
         p.hero-baseline
@@ -23,22 +23,13 @@ block content
     #services.pod
       .wrapper
         .pod-header
-          h2.pod-title Développeur créatif
-          p.pod-bigTitle Design & code
+          h2.pod-title Freelance
+          p.pod-bigTitle Dev-front & designer
           svg.divider
             use(xlink:href='#divider')
           p.txtLead
             | Créatif et passionné, je suis disponible pour vous accompagner de la conception jusqu’au développement de votre projet.
         .grid
-          .grid-2-4
-            h3.pod-smallTitle Product Designer
-            ul.tag
-              li.tag-item UI / UX design
-              li.tag-item Atelier de conception
-              li.tag-item Wireframe
-              li.tag-item Wireflow
-              li.tag-item Design systeme
-              li.tag-item Design d'application web
           .grid-2-4
             h3.pod-smallTitle Développeur front-end
             ul.tag
@@ -51,6 +42,18 @@ block content
               li.tag-item Performance
               li.tag-item SEO
               li.tag-item Accessibilité
+          .grid-2-4
+            h3.pod-smallTitle UI designer
+            ul.tag
+              li.tag-item UI design
+              li.tag-item Atelier de conception
+              li.tag-item Wireframe
+              li.tag-item Wireflow
+              li.tag-item Design systeme
+              li.tag-item Design mobile
+              li.tag-item Design d'application web
+              
+          
       .data
         .data-item
           .data-title 79
@@ -158,8 +161,8 @@ block content
         )
         +project(
           'Startup Project',
-          '2016',
           'https://www.startupproject.fr/',
+          '2016',
           "Intégration web dans un environnement Rails en collaboration avec l'équipe Alqemist, pour l'AACC Cap Digital."
         )
         +project(
