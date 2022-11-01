@@ -26,7 +26,7 @@
   "homepage": "https://github.com/sutter/helloFront#readme",
   "devDependencies": {
     "browser-sync": "^2.23.6",
-    "gulp": "^3.9.1"
+    "gulp": "^4.0.2"
   },
   "dependencies": {
     "babel-core": "^6.26.0",
