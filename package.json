@@ -37,7 +37,7 @@
     "gulp-cheerio": "^0.6.3",
     "gulp-csso": "^3.0.1",
     "gulp-htmlmin": "^4.0.0",
-    "gulp-iconfont": "^9.1.0",
+    "gulp-iconfont": "^9.2.0",
     "gulp-iconfont-css": "^2.1.0",
     "gulp-imagemin": "^4.1.0",
     "gulp-notify": "^3.2.0",

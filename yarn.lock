@@ -3054,7 +3054,7 @@ gulp-iconfont-css@^2.1.0:
     gulp-util "^3.0.6"
     lodash "^3.10.0"
 
-gulp-iconfont@^9.1.0:
+gulp-iconfont@^9.2.0:
   version "9.2.0"
   resolved "https://registry.yarnpkg.com/gulp-iconfont/-/gulp-iconfont-9.2.0.tgz#e3a5f5ad2247cf6851d708506cf724885e782d8e"
   dependencies:
